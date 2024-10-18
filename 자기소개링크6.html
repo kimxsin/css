@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boony's PIZZA</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    background-color: #121213; /* 부드러운 배경색 */
+    color: #333;
+}
+
+header {
+    background: #d33928; /* 레드 계열의 색상 */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0c27b; /* 호버 시 색상 변경 */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #c0392b; /* 제목 색상 */
+    text-align: center;
+}
+
+#location p {
+    text-align: center; /* 중앙 정렬 추가 */
+}
+
+#about p {
+    text-align: center; /* 중앙 정렬 추가 */
+}
+
+
+
+        .responsive {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-container {
+            display: flex; /* Flexbox 사용 */
+            justify-content: flex-start; /* 왼쪽 정렬 */
+            flex-wrap: wrap; /* 줄 바꿈 */
+        }
+
+        .menu-item {
+            margin: 40px; /* 이미지 간 간격 */
+        }
+
+        .menu-image {
+            max-width: 1000px; /* 이미지 최대 너비 설정 */
+            max-height: 1000px;
+            height: auto; /* 비율 유지 */
+            border-radius: 8px; /* 모서리 둥글게 */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #c0392b;
+            color: #1a0f0f;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>미진 삼겹살</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#menu">메뉴</a></li>
+                <li><a href="#location">위치</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>소개</h2>
+            <p>모둠으로 시키면 삼겹살, 목살, 항정살, 껍데기 등등 여러가지 나온다 목살은 평범해서 단품으로 먹는것도 괜찮다
+                특히 껍데기가 진짜 맛있으니 추가하는것도 좋음 복분자하이볼과 함께 먹으면 극락 
+            </p>
+        </section>
+
+        <section id="menu">
+            <h2>메뉴</h2>
+            <div class="menu-container"> <!-- 새로운 컨테이너 추가 -->
+                <div class="menu-item">
+                    <img src="sample/image/미진1.jfif" alt="메뉴 항목 1" class="menu-image" width="400px" height="400px">
+                </div>
+                <div class="menu-item">
+                    <img src="sample/image/미진2.jfif" alt="메뉴 항목 2" class="menu-image" width="300px" height="500px">
+                </div>
+                <div class="menu-item">
+                    <img src="sample/image/미진3.png" alt="메뉴 항목 3" class="menu-image" width="300px" height="300px">
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>위치</h2>
+            <p>주소
+                <br>
+                <br> 대구 중구 공평로8길 25 미진삼겹살
+                
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;  경훈 맛집</p>
+    </footer>
+</body>
+</html>

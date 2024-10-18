@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* 세로 중앙 정렬 */
+            align-items: center; /* 가로 중앙 정렬 */
+            height: 60vh; /* 전체 화면 높이 */
+            margin: 0; /* 기본 여백 제거 */
+            font-family: 'Montserrat', sans-serif; /* 폰트 적용 */
+        }
+        h1 {
+            text-align: center; /* 텍스트 중앙 정렬 */
+            margin-bottom: 20px; /* 입력칸과 간격 */
+            font-size: 48px; /* 글자 크기 조정 */
+        }
+
+
+        .search-container {
+            display: flex;
+            align-items: center; /* 세로 중앙 정렬 */
+            border: 1px solid #ccc; /* 테두리 */
+            border-radius: 24px; /* 둥근 모서리 */
+            padding: 8px; /* 안쪽 여백 */
+            width: 800px; /* 입력창 너비 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 그림자 */
+        }
+        input {
+            border: none; /* 기본 테두리 제거 */
+            outline: none; /* 포커스 시 테두리 제거 */
+            flex: 1; /* 공간을 채우도록 설정 */
+            font-size: 16px; /* 글자 크기 조정 */
+            padding: 5px; /* 안쪽 여백 */
+        }
+        input::placeholder {
+            color: #999; /* 플레이스홀더 색상 */
+        }
+        button {
+            background-color: #4285F4; /* 버튼 색상 */
+            color: white; /* 글자 색상 */
+            border: none; /* 기본 테두리 제거 */
+            border-radius: 20px; /* 둥근 모서리 */
+            padding: 10px 20px; /* 안쪽 여백 */
+            cursor: pointer; /* 커서 변경 */
+            margin-left: 10px; /* 버튼과 입력칸 간격 */
+        }
+        button:hover {
+            background-color: #357AE8; /* 호버 시 색상 변경 */
+        }
+
+        .color1 { color: blue; }
+        .color2 { color: red; }
+        .color3 { color: orange; }
+        .color4 { color: green; }
+        .color5 { color: plum; }
+        .color6 { color: red; }
+        .color7 { color: orange; }
+        .color8 { color: green; }
+
+        .image-container {
+            display: flex; /* 이미지를 가로로 정렬 */
+            flex-wrap: wrap; /* 여러 줄로 감싸기 */
+            justify-content: center; /* 가로 중앙 정렬 */
+            margin: 10px 0; /* 이미지 컨테이너 여백 */
+        }
+        a {
+            margin: 15px; /* 이미지 간격 */
+            text-decoration: none; /* 링크 밑줄 제거 */
+        }
+        img {
+            width: 60px; /* 이미지 너비 */
+            height: auto; /* 비율 유지 */
+            border-radius: 8px; /* 둥근 모서리 */
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* 그림자 효과 */
+        }
+
+      
+    </style>
+</head>
+<body>
+    <h1>
+        <span class="color1">G</span>
+        <span class="color2">Y</span>
+        <span class="color3">U</span>
+        <span class="color4">N</span>
+        <span class="color5">G</span>
+        <span class="color6">G</span>
+        <span class="color7">U</span>
+        <span class="color8">L</span>
+    </h1>
+    <br>
+        <div class="search-container">
+        <input type="text" placeholder="맛집 찾아보기 바로가기...">
+        <button>검색</button>
+    </div>
+<br>
+
+    <div class="image-container">
+        <a href="https://example.com/link1">
+            <img src="sample/image/KakaoTalk_20241018_130631176.jpg" >
+        </a>
+        <a href="https://example.com/link2">
+            <img src="sample/image/KakaoTalk_20241018_130631176_01.jpg" >
+        </a>
+        <a href="https://example.com/link3">
+            <img src="sample/image/KakaoTalk_20241018_130631176_02.jpg" >
+        </a>
+        <a href="https://example.com/link4">
+            <img src="sample/image/KakaoTalk_20241018_130631176_03.jpg" >
+        </a>
+        <a href="https://example.com/link5">
+            <img src="sample/image/KakaoTalk_20241018_130631176_04.jpg" >
+        </a>
+        <a href="https://example.com/link6">
+            <img src="sample/image/KakaoTalk_20241018_130631176_05.jpg" >
+        </a>
+    </div>
+</body>
+</html>

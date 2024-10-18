@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boony's PIZZA</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    background-color: #121213; /* 부드러운 배경색 */
+    color: #333;
+}
+
+header {
+    background: #d33928; /* 레드 계열의 색상 */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0c27b; /* 호버 시 색상 변경 */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #c0392b; /* 제목 색상 */
+    text-align: center;
+}
+
+#location p {
+    text-align: center; /* 중앙 정렬 추가 */
+}
+
+#about p {
+    text-align: center; /* 중앙 정렬 추가 */
+}
+
+
+
+        .responsive {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-container {
+            display: flex; /* Flexbox 사용 */
+            justify-content: flex-start; /* 왼쪽 정렬 */
+            flex-wrap: wrap; /* 줄 바꿈 */
+        }
+
+        .menu-item {
+            margin: 30px; /* 이미지 간 간격 */
+        }
+
+        .menu-image {
+            max-width: 1000px; /* 이미지 최대 너비 설정 */
+            max-height: 1000px;
+            height: auto; /* 비율 유지 */
+            border-radius: 8px; /* 모서리 둥글게 */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #c0392b;
+            color: #1a0f0f;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>이츠모 라멘</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#menu">메뉴</a></li>
+                <li><a href="#location">위치</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>소개</h2>
+            <p>일본 라멘, 블루리본에 4년 연속 선정된 맛집이다 웨이팅은 항상 많은 편 이지만 회전률이 빨라 줄이 길더라도
+                금방금방 빠지는 편. 육수는 돈코츠가 기본이고 토리(닭) 도 있다. 라멘국물이 조금 농도가 있어서 느끼할 수 있으므로
+                느끼한걸 잘 못 먹는 사람에겐 카라이 돈코츠 라멘 추천 차슈도 특히 맛있어서 추가 하는것을 추천함.
+            </p>
+        </section>
+
+        <section id="menu">
+            <h2>메뉴</h2>
+            <div class="menu-container"> <!-- 새로운 컨테이너 추가 -->
+                <div class="menu-item">
+                    <img src="sample/image/이츠모4.jfif" alt="메뉴 항목 1" class="menu-image" width="400px" height="700px">
+                </div>
+                <div class="menu-item">
+                    <img src="sample/image/이츠모1.jfif" alt="메뉴 항목 2" class="menu-image" width="400px" height="500px">
+                </div>
+                <div class="menu-item">
+                    <img src="sample/image/이츠모3.jfif" alt="메뉴 항목 3" class="menu-image" width="400px" height="300px">
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>위치</h2>
+            <p>주소
+                <br>
+                <br> 서울특별시 마포구 서교동 342-16 (홍대입구)
+                
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;  경훈 맛집</p>
+    </footer>
+</body>
+</html>

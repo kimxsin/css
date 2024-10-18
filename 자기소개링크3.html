@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boony's PIZZA</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    background-color: #121213; /* 부드러운 배경색 */
+    color: #333;
+}
+
+header {
+    background: #d33928; /* 레드 계열의 색상 */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0c27b; /* 호버 시 색상 변경 */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #c0392b; /* 제목 색상 */
+    text-align: center;
+}
+
+#location p {
+    text-align: center; /* 중앙 정렬 추가 */
+}
+
+#about p {
+    text-align: center; /* 중앙 정렬 추가 */
+}
+
+
+
+        .responsive {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-container {
+            display: flex; /* Flexbox 사용 */
+            justify-content: flex-start; /* 왼쪽 정렬 */
+            flex-wrap: wrap; /* 줄 바꿈 */
+        }
+
+        .menu-item {
+            margin: 15px; /* 이미지 간 간격 */
+        }
+
+        .menu-image {
+            max-width: 1000px; /* 이미지 최대 너비 설정 */
+            max-height: 1000px;
+            height: auto; /* 비율 유지 */
+            border-radius: 8px; /* 모서리 둥글게 */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #c0392b;
+            color: #1a0f0f;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Boony's PIZZA</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#menu">메뉴</a></li>
+                <li><a href="#location">위치</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>소개</h2>
+            <p>미국식 피자, 메뉴판도 영어로 되어있고 직원도 미국 사람인것 같다(최근엔 잘 모름) 
+                하와이안 피자와 페퍼로니 피자가 유명하지만 하와이안 피자는 안먹어봐서 모른다
+                김치피차, 감자튀김피자 등 다양한 메뉴도 있다.
+            </p>
+        </section>
+
+        <section id="menu">
+            <h2>메뉴</h2>
+            <div class="menu-container"> <!-- 새로운 컨테이너 추가 -->
+                <div class="menu-item">
+                    <img src="sample/image/보니스7.jfif" alt="메뉴 항목 1" class="menu-image" width="400px" height="400px">
+                </div>
+                <div class="menu-item">
+                    <img src="sample/image/보니스5.jfif" alt="메뉴 항목 2" class="menu-image" width="300px" height="500px">
+                </div>
+                <div class="menu-item">
+                    <img src="sample/image/보니스2.jfif" alt="메뉴 항목 3" class="menu-image" width="300px" height="300px">
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>위치</h2>
+            <p>주소
+                <br>
+                <br> 이태원점 - 서울 용산구 신흥로3길 2 
+                <br>
+                <br> 석촌호수점 - 서울 송파구 송파대로49길 52
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;  경훈 맛집</p>
+    </footer>
+</body>
+</html>

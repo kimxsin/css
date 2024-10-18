@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 스타일 시트를 링크합니다 -->
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* 부드러운 배경색 */
+    color: #333;
+}
+
+header {
+    background: #d33928; /* 레드 계열의 색상 */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0c27b; /* 호버 시 색상 변경 */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #c0392b; /* 제목 색상 */
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.menu-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #c0392b;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <header>
+            <h1>레스토랑 이름</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">소개</a></li>
+                    <li><a href="#menu">메뉴</a></li>
+
+                    <li><a href="#location">위치</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="about">
+                <h2>소개</h2>
+                <img src="restaurant.jpg" alt="레스토랑 사진" class="responsive">
+                <p>레스토랑에 대한 간략한 설명이 여기에 들어갑니다.</p>
+            </section>
+    
+            <section id="menu">
+                <h2>메뉴</h2>
+                <div class="menu-item">
+                    <img src="menu-item1.jpg" alt="메뉴 항목 1" class="menu-image">
+                    <h3>메뉴 항목 1</h3>
+                    <p>메뉴 항목 1에 대한 설명이 여기에 들어갑니다.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="menu-item2.jpg" alt="메뉴 항목 2" class="menu-image">
+                    <h3>메뉴 항목 2</h3>
+                    <p>메뉴 항목 2에 대한 설명이 여기에 들어갑니다.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="menu-item3.jpg" alt="메뉴 항목 3" class="menu-image">
+                    <h3>메뉴 항목 3</h3>
+                    <p>메뉴 항목 3에 대한 설명이 여기에 들어갑니다.</p>
+                </div>
+            </section>
+    
+        
+    
+            <section id="location">
+                <h2>위치</h2>
+                <p>주소: 레스토랑 주소가 여기에 들어갑니다.</p>
+               
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy;  맛집</p>
+        </footer>
+</body>
+</html>
